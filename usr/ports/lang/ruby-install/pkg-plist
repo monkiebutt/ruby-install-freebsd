@@ -1,0 +1,39 @@
+bin/ruby-install
+
+%%DOCSDIR_REL%%/LICENSE.txt
+%%DOCSDIR_REL%%/README.md
+%%DOCSDIR_REL%%/ChangeLog.md
+%%DOCSDIR_REL%%/CONTRIBUTING.md
+
+share/%%PORTNAME%%/jruby/dependencies.txt
+share/%%PORTNAME%%/jruby/functions.sh
+share/%%PORTNAME%%/jruby/md5.txt
+share/%%PORTNAME%%/jruby/versions.txt
+share/%%PORTNAME%%/maglev/dependencies.txt
+share/%%PORTNAME%%/maglev/functions.sh
+share/%%PORTNAME%%/maglev/md5.txt
+share/%%PORTNAME%%/maglev/versions.txt
+share/%%PORTNAME%%/mruby/dependencies.txt
+share/%%PORTNAME%%/mruby/functions.sh
+share/%%PORTNAME%%/mruby/md5.txt
+share/%%PORTNAME%%/mruby/versions.txt
+share/%%PORTNAME%%/rbx/dependencies.txt
+share/%%PORTNAME%%/rbx/functions.sh
+share/%%PORTNAME%%/rbx/md5.txt
+share/%%PORTNAME%%/rbx/versions.txt
+share/%%PORTNAME%%/ruby/dependencies.txt
+share/%%PORTNAME%%/ruby/functions.sh
+share/%%PORTNAME%%/ruby/md5.txt
+share/%%PORTNAME%%/ruby/versions.txt
+share/%%PORTNAME%%/functions.sh
+share/%%PORTNAME%%/ruby-install.sh
+
+
+@dirrm %%DOCSDIR_REL%%
+
+@dirrm share/%%PORTNAME%%/jruby
+@dirrm share/%%PORTNAME%%/maglev
+@dirrm share/%%PORTNAME%%/mruby
+@dirrm share/%%PORTNAME%%/rbx
+@dirrm share/%%PORTNAME%%/ruby
+@dirrm share/%%PORTNAME%%

@@ -1,0 +1,22 @@
+Installs Ruby, JRuby, Rubinius, MagLev or mruby.
+
+Features:
+
+ * Supports installing arbitrary versions.
+ * Supports installing into /opt/rubies/ for root and ~/.rubies/ for users by default.
+ * Supports installing into arbitrary directories.
+ * Supports downloading from arbitrary URLs.
+ * Supports downloading from mirrors.
+ * Supports downloading/applying patches.
+ * Supports specifying arbitrary ./configure options.
+ * Supports downloading archives using wget or curl.
+ * Supports verifying downloaded archives using md5sum, md5 or openssl md5.
+ * Supports installing build dependencies via the package manager:
+    - apt
+    - yum
+    - pacman
+    - macports
+    - brew
+ * Has tests.
+
+WWW: https://github.com/postmodern/ruby-install
