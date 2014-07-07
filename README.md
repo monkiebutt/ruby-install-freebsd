@@ -5,10 +5,15 @@
     cd /tmp
     git clone https://github.com/steakknife/ruby-install-freebsd
     cd ruby-install-freebsd
-    ./install
+    ./install # installs to /usr/ports/lang/ruby-install
     rm -rf /tmp/ruby-install-freebsd
     cd /usr/ports/lang/ruby-install
     [sudo or su -c] make install clean
+
+if git is not already installed, run:
+
+    pkg install git
+
 
 ## Uninstall
 
