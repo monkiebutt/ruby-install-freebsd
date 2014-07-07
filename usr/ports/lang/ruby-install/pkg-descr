@@ -3,7 +3,8 @@ Installs Ruby, JRuby, Rubinius, MagLev or mruby.
 Features:
 
  * Supports installing arbitrary versions.
- * Supports installing into /opt/rubies/ for root and ~/.rubies/ for users by default.
+ * Supports installing into /opt/rubies/ for root and
+   ~/.rubies/ for users by default.
  * Supports installing into arbitrary directories.
  * Supports downloading from arbitrary URLs.
  * Supports downloading from mirrors.
