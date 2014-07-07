@@ -1,4 +1,2 @@
 #!/bin/sh
-set -e
-exec rsync -avz --delete usr/ports/lang/ruby-install/ /usr/ports/lang/ruby-install/
-
+exec cp -a usr/ports/lang/ruby-install /usr/ports/lang
