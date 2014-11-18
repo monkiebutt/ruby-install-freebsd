@@ -2,7 +2,7 @@
 # $FreeBSD: ruby-install/Makefile $
 
 PORTNAME=			ruby-install
-PORTVERSION=	0.4.3
+PORTVERSION=	0.5.0
 CATEGORIES=		lang ruby
 MASTER_SITES=	https://github.com/postmodern/ruby-install/archive/
 DISTNAME= 		v${PORTVERSION}
@@ -15,7 +15,6 @@ LICENSE=MIT
 RUN_DEPENDS=	bash:${PORTSDIR}/shells/bash curl:${PORTSDIR}/ftp/curl
 
 USES+= gmake
-NO_STAGE=	yes
 NO_BUILD= yes
 MAKE_CMD= ${GMAKE}
 ALL_TARGET= install
