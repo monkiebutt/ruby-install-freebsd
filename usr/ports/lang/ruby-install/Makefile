@@ -28,6 +28,9 @@ PLIST_SUB+= DOCSDIR_REL=${DOCSDIR_REL}
 PLIST_SUB+= PORTNAME=${PORTNAME}
 PLIST_SUB+= PORTVERSION=${PORTVERSION}
 
+do-install:
+	cd ${WRKSRC} && sh -c 'PREFIX=${STAGEDIR}/usr/local; export PREFIX; $(MAKE_CMD) $(ALL_TARGET)'
+
 post-patch:
 	@${REINPLACE_CMD} -e 's|share/man/|man/|g;s/DIRS=bin share/& man/' ${WRKSRC}/Makefile
 	@$(MV) ${WRKSRC}/share/man ${WRKSRC}/man

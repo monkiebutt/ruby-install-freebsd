@@ -5,10 +5,8 @@ bin/ruby-install
 %%DOCSDIR_REL%%/ChangeLog.md
 %%DOCSDIR_REL%%/CONTRIBUTING.md
 
-# share/%%PORTNAME%%
 share/%%PORTNAME%%/checksums.sh
 share/%%PORTNAME%%/functions.sh
-# share/%%PORTNAME%%/jruby
 share/%%PORTNAME%%/jruby/checksums.md5
 share/%%PORTNAME%%/jruby/checksums.sha1
 share/%%PORTNAME%%/jruby/checksums.sha256
@@ -17,7 +15,6 @@ share/%%PORTNAME%%/jruby/dependencies.txt
 share/%%PORTNAME%%/jruby/functions.sh
 share/%%PORTNAME%%/jruby/stable.txt
 share/%%PORTNAME%%/jruby/versions.txt
-# share/%%PORTNAME%%/maglev
 share/%%PORTNAME%%/maglev/checksums.md5
 share/%%PORTNAME%%/maglev/checksums.sha1
 share/%%PORTNAME%%/maglev/checksums.sha256
@@ -26,7 +23,6 @@ share/%%PORTNAME%%/maglev/dependencies.txt
 share/%%PORTNAME%%/maglev/functions.sh
 share/%%PORTNAME%%/maglev/stable.txt
 share/%%PORTNAME%%/maglev/versions.txt
-# share/%%PORTNAME%%/mruby
 share/%%PORTNAME%%/mruby/checksums.md5
 share/%%PORTNAME%%/mruby/checksums.sha1
 share/%%PORTNAME%%/mruby/checksums.sha256
@@ -35,7 +31,6 @@ share/%%PORTNAME%%/mruby/dependencies.txt
 share/%%PORTNAME%%/mruby/functions.sh
 share/%%PORTNAME%%/mruby/stable.txt
 share/%%PORTNAME%%/mruby/versions.txt
-# share/%%PORTNAME%%/rbx
 share/%%PORTNAME%%/rbx/checksums.md5
 share/%%PORTNAME%%/rbx/checksums.sha1
 share/%%PORTNAME%%/rbx/checksums.sha256
@@ -45,7 +40,6 @@ share/%%PORTNAME%%/rbx/functions.sh
 share/%%PORTNAME%%/rbx/stable.txt
 share/%%PORTNAME%%/rbx/versions.txt
 share/%%PORTNAME%%/%%PORTNAME%%.sh
-# share/%%PORTNAME%%/ruby
 share/%%PORTNAME%%/ruby/checksums.md5
 share/%%PORTNAME%%/ruby/checksums.sha1
 share/%%PORTNAME%%/ruby/checksums.sha256
