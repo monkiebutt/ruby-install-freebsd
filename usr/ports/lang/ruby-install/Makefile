@@ -1,38 +1,26 @@
 # Created by: Barry Allard <barry.allard@gmail.com>
 # $FreeBSD: ruby-install/Makefile $
 
-PORTNAME=			ruby-install
-PORTVERSION=	0.5.0
-CATEGORIES=		lang ruby
-MASTER_SITES=	https://github.com/postmodern/ruby-install/archive/
-DISTNAME= 		v${PORTVERSION}
+PORTNAME=	ruby-install
+PORTVERSION=	0.6.0
+DISTVERSIONPREFIX=	v
+CATEGORIES=	lang ruby
 
 MAINTAINER=	postmodern.mod3@gmail.com
 COMMENT=	Installs Ruby, JRuby, Rubinius, MagLev or MRuby
 
-LICENSE=MIT
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	bash:${PORTSDIR}/shells/bash curl:${PORTSDIR}/ftp/curl
 
-USES+= gmake
-NO_BUILD= yes
-MAKE_CMD= ${GMAKE}
-ALL_TARGET= install
-MAN1+= ruby-install.1
+USE_GITHUB=	yes
+GH_ACCOUNT=	postmodern
 
-WRKSRC=	${WRKDIR}/${PORTNAME}-${PORTVERSION}
+NO_BUILD=	yes
 
-DOCSDIR_REL= share/doc/${PORTNAME}-${PORTVERSION}
-
-PLIST_SUB+= DOCSDIR_REL=${DOCSDIR_REL}
-PLIST_SUB+= PORTNAME=${PORTNAME}
-PLIST_SUB+= PORTVERSION=${PORTVERSION}
-
-do-install:
-	cd ${WRKSRC} && sh -c 'PREFIX=${STAGEDIR}/usr/local; export PREFIX; $(MAKE_CMD) $(ALL_TARGET)'
-
-post-patch:
-	@${REINPLACE_CMD} -e 's|share/man/|man/|g;s/DIRS=bin share/& man/' ${WRKSRC}/Makefile
-	@$(MV) ${WRKSRC}/share/man ${WRKSRC}/man
+post-stage:
+	${CP} ${WRKSRC}/share/man/man1/ruby-install.1 ${STAGEDIR}${PREFIX}/man/man1
+	${GZIP_CMD} ${STAGEDIR}${PREFIX}/man/man1/ruby-install.1
 
 .include <bsd.port.mk>
