@@ -1,5 +1,5 @@
 # Created by: Barry Allard <barry.allard@gmail.com>
-# $FreeBSD: ruby-install/Makefile $
+# $FreeBSD$
 
 PORTNAME=	ruby-install
 PORTVERSION=	0.6.0
@@ -12,7 +12,7 @@ COMMENT=	Installs Ruby, JRuby, Rubinius, MagLev or MRuby
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	bash:${PORTSDIR}/shells/bash curl:${PORTSDIR}/ftp/curl
+RUN_DEPENDS=	bash:shells/bash curl:ftp/curl
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	postmodern

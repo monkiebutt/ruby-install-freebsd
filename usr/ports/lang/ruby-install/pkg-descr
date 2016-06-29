@@ -13,14 +13,6 @@ Features:
  * Supports specifying arbitrary ./configure options.
  * Supports downloading archives using wget or curl.
  * Supports verifying downloaded archives using md5sum, md5 or openssl md5.
- * Supports installing build dependencies via the package manager:
-    - apt
-    - dnf
-    - yum
-    - pacman
-    - macports
-    - brew
- * Has tests.
 
 Anti-Features:
 
