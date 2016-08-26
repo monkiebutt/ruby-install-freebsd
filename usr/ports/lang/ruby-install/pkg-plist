@@ -1,59 +1,22 @@
 bin/ruby-install
-
-%%DOCSDIR_REL%%/LICENSE.txt
-%%DOCSDIR_REL%%/README.md
-%%DOCSDIR_REL%%/ChangeLog.md
-%%DOCSDIR_REL%%/CONTRIBUTING.md
-
-share/%%PORTNAME%%/checksums.sh
-share/%%PORTNAME%%/functions.sh
-share/%%PORTNAME%%/jruby/checksums.md5
-share/%%PORTNAME%%/jruby/checksums.sha1
-share/%%PORTNAME%%/jruby/checksums.sha256
-share/%%PORTNAME%%/jruby/checksums.sha512
-share/%%PORTNAME%%/jruby/dependencies.txt
-share/%%PORTNAME%%/jruby/functions.sh
-share/%%PORTNAME%%/jruby/stable.txt
-share/%%PORTNAME%%/jruby/versions.txt
-share/%%PORTNAME%%/maglev/checksums.md5
-share/%%PORTNAME%%/maglev/checksums.sha1
-share/%%PORTNAME%%/maglev/checksums.sha256
-share/%%PORTNAME%%/maglev/checksums.sha512
-share/%%PORTNAME%%/maglev/dependencies.txt
-share/%%PORTNAME%%/maglev/functions.sh
-share/%%PORTNAME%%/maglev/stable.txt
-share/%%PORTNAME%%/maglev/versions.txt
-share/%%PORTNAME%%/mruby/checksums.md5
-share/%%PORTNAME%%/mruby/checksums.sha1
-share/%%PORTNAME%%/mruby/checksums.sha256
-share/%%PORTNAME%%/mruby/checksums.sha512
-share/%%PORTNAME%%/mruby/dependencies.txt
-share/%%PORTNAME%%/mruby/functions.sh
-share/%%PORTNAME%%/mruby/stable.txt
-share/%%PORTNAME%%/mruby/versions.txt
-share/%%PORTNAME%%/rbx/checksums.md5
-share/%%PORTNAME%%/rbx/checksums.sha1
-share/%%PORTNAME%%/rbx/checksums.sha256
-share/%%PORTNAME%%/rbx/checksums.sha512
-share/%%PORTNAME%%/rbx/dependencies.txt
-share/%%PORTNAME%%/rbx/functions.sh
-share/%%PORTNAME%%/rbx/stable.txt
-share/%%PORTNAME%%/rbx/versions.txt
-share/%%PORTNAME%%/%%PORTNAME%%.sh
-share/%%PORTNAME%%/ruby/checksums.md5
-share/%%PORTNAME%%/ruby/checksums.sha1
-share/%%PORTNAME%%/ruby/checksums.sha256
-share/%%PORTNAME%%/ruby/checksums.sha512
-share/%%PORTNAME%%/ruby/dependencies.txt
-share/%%PORTNAME%%/ruby/functions.sh
-share/%%PORTNAME%%/ruby/stable.txt
-share/%%PORTNAME%%/ruby/versions.txt
-
-@dir %%DOCSDIR_REL%%
-
-@dir share/%%PORTNAME%%/jruby
-@dir share/%%PORTNAME%%/maglev
-@dir share/%%PORTNAME%%/mruby
-@dir share/%%PORTNAME%%/rbx
-@dir share/%%PORTNAME%%/ruby
-@dir share/%%PORTNAME%%
+man/man1/ruby-install.1.gz
+%%PORTDOCS%%%%DOCSDIR%%-0.6.0/CONTRIBUTING.md
+%%PORTDOCS%%%%DOCSDIR%%-0.6.0/ChangeLog.md
+%%PORTDOCS%%%%DOCSDIR%%-0.6.0/LICENSE.txt
+%%PORTDOCS%%%%DOCSDIR%%-0.6.0/README.md
+%%DATADIR%%/checksums.sh
+%%DATADIR%%/functions.sh
+%%DATADIR%%/jruby/dependencies.txt
+%%DATADIR%%/jruby/functions.sh
+%%DATADIR%%/maglev/dependencies.txt
+%%DATADIR%%/maglev/functions.sh
+%%DATADIR%%/mruby/dependencies.txt
+%%DATADIR%%/mruby/functions.sh
+%%DATADIR%%/rbx/dependencies.txt
+%%DATADIR%%/rbx/functions.sh
+%%DATADIR%%/ruby-install.sh
+%%DATADIR%%/ruby-versions.sh
+%%DATADIR%%/ruby/dependencies.txt
+%%DATADIR%%/ruby/functions.sh
+%%DATADIR%%/util.sh
+%%DATADIR%%/versions.sh

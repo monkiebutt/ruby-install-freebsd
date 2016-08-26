@@ -3,6 +3,7 @@ Installs Ruby, JRuby, Rubinius, MagLev or mruby.
 Features:
 
  * Supports installing arbitrary versions.
+ * Supports downloading the latest versions and checksums from ruby-versions.
  * Supports installing into /opt/rubies/ for root and
    ~/.rubies/ for users by default.
  * Supports installing into arbitrary directories.
@@ -12,12 +13,11 @@ Features:
  * Supports specifying arbitrary ./configure options.
  * Supports downloading archives using wget or curl.
  * Supports verifying downloaded archives using md5sum, md5 or openssl md5.
- * Supports installing build dependencies via the package manager:
-    - apt
-    - yum
-    - pacman
-    - macports
-    - brew
- * Has tests.
+
+Anti-Features:
+
+ * Does not require updating every time a new Ruby version comes out.
+ * Does not require recipes for each individual Ruby version or configuration.
+ * Does not support installing trunk/HEAD.
 
 WWW: https://github.com/postmodern/ruby-install
